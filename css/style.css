@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(215, 32%, 27%);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  margin: auto;
+  border-radius: 15px;
+  max-width: 360px;
+  width: 100%;
+  padding: 18px;
+  box-shadow: 10px 10px 80px 10px hsl(215, 51%, 14%);
+}
+
+.card__img-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.card__img-container::after {
+  position: absolute;
+  content: url(../images/icon-view.svg);
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 256, 241, 0.4);
+  border-radius: 10px;
+  opacity: 0;
+}
+.card__img-container:hover::after {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+}
+
+.card__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.card__title:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in-out;
+}
+
+.card__description {
+  color: hsl(215, 51%, 70%);
+  margin: 20px 0;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card__price,
+.card__date {
+  display: flex;
+  align-items: center;
+}
+.card__coin-amount {
+  color: hsl(178, 100%, 50%);
+  margin: 0 10px;
+}
+
+.card__last-date {
+  color: hsl(215, 51%, 70%);
+  margin: 0 10px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0.5px solid hsl(215, 32%, 27%);
+  margin: 20px 0;
+}
+
+.card__user {
+  display: flex;
+
+  align-items: center;
+}
+.card__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin-right: 20px;
+}
+
+.card__avatar-name {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__avatar-name span:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.3s ease-in-out;
+}
