@@ -15,55 +15,36 @@
   <title>Pablo Barrios | NFT preview card component</title>
 </head>
 <body>
+  <main class="card">
 
+    <img src="images/image-equilibrium.jpg" alt="NFT image" 
+    class="card__img">
 
-    
-    <div class="card">
+    <h1 class="card__title">Equilibrium #3429</h1>
 
-      
+    <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
 
-      <div class="card__img-container">
-        <img src="images/image-equilibrium.jpg" alt="Image NFT" class="card__img">
-<!--         <img src="images/icon-view.svg" alt="view icon" class="card__view-icon"> -->
+    <div class="card__price">
+
+      <div class="card__price">
+        <img src="images/icon-ethereum.svg" alt="Coin logo" class="card__price-logo">
+        <p class="card__price-amount">0.041 ETH</p>
       </div>
 
-      <div class="card__text">
-        <h2 class="card__title">Equilibrium #3429</h2>
-        <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="card__countdown">
+        <img src="images/icon-clock.svg" alt="Clock logo" class="card__countdown-logo">
+        <p class="card__countdown-date">3 days left</p>
       </div>
-
-      <div class="card__info">
-
-        <div class="card__price">
-          <img src="images/icon-ethereum.svg" alt="icon ethereum" class="card__coin">
-          <p class="card__coin-amount">0.041 ETH</p>
-        </div>
-
-        <div class="card__date">
-          <img src="images/icon-clock.svg" alt="icon clock" class="card__clock">
-          <p class="card__last-date">3 days left</p>
-        </div>
-
-      </div>
-
-      <hr class="solid">
-        
-      <div class="card__user">
-          <img src="images/image-avatar.png" alt="avatar user" class="card__avatar">
-          <p class="card__avatar-name">Creation of <span>Jules Wyvern</span></p>
-      </div>
-
+          
     </div>
 
+    <hr class="card__divider">
 
-  
+    <div class="card__user">
+      <img src="images/image-avatar.png" alt="avatar photo" class="card__user-photo">
+      <p class="card__user-name">Creation of <a href="#">Jules Wyvern</a></p>
+    </div>
 
-<!--   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-
-
-
+  </main>
 </body>
 </html>
