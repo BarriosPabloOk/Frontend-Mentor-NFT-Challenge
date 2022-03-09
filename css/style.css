@@ -4,7 +4,7 @@
 
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
-  --very-dark-blue-1: hsl(217, 54%, 11%);
+  --very-dark-blue-1: hsl(216, 54%, 11%);
   --very-dark-blue-2: hsl(216, 50%, 16%);
   --very_dark_blue-3: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
@@ -31,6 +31,7 @@ body {
   padding: 1.32em;
   color: var(--white);
   border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 1em #0a131b;
 }
 
 .card__image-hover {
